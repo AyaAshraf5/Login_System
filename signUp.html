@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container my-5 text-center">
+      <div class="group w-75 m-auto p-5">
+        <h1>Smart SignUp System</h1>
+        <input
+          type="text"
+          class="form-control my-3"
+          placeholder="Enter your name"
+          id="signupName"
+        />
+        <p class="alert text-danger p-0 m-0 d-none">the name must be at least 3 characters</p>
+        <input
+          type="text"
+          class="form-control my-3"
+          placeholder="Enter your email"
+          id="signupEmail"
+        />
+        <p class="alert text-danger p-0 m-0 d-none">the email must be valid</p>
+        <input
+          type="password"
+          class="form-control my-3"
+          placeholder="Enter your password"
+          id="signupPassword"
+        />
+        <p class="alert text-danger p-0 m-0 d-none">the password must be at least 8 Numbers</p>
+        <p id="exist"></p>
+        <button class="btn btn-outline-info w-100 my-3" id="signupButton">
+          Sign Up
+        </button>
+        <p class="text-white">
+          You have an account?
+          <a href="/index.html">Sign in</a>
+        </p>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
